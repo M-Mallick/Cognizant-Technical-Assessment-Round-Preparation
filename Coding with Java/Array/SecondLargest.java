@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-    public static int secondLargest(int[] arr) {
+    public static int[] secondLargest(int[] arr) {
         int max = Integer.MIN_VALUE;
         int secMax = Integer.MIN_VALUE;
         for(int i=0; i<arr.length; i++) {
@@ -12,11 +12,11 @@ public class Main {
                 secMax = arr[i];
             }
         }
-        return secMax;
+        return new int[] {max, secMax};
     }
 	public static void main(String[] args) {
-	    int[] arr = {0,1,5,7,9,14,15};
-	    int a = secondLargest(arr);
-        System.out.println(a);
+	    int[] arr = {0,1,5,90,7,9,14,15};
+	    int[] a = secondLargest(arr);
+        System.out.println(Arrays.toString(a));
 	}
 }
