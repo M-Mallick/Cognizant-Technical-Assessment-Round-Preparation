@@ -20,6 +20,12 @@ public class Main {
 	public static void main(String[] args) {
 	    int[] arr = {0,1,5,7,9,14,15};
 	    int index = binary(arr, 9);
-		System.out.println(index+" -> "+arr[index]);
+		
+        if(index != -1) {
+            System.out.println(index + " -> " + arr[index]);
+        } else {
+            System.out.println("Element not found");
+        }
+		
 	}
 }
