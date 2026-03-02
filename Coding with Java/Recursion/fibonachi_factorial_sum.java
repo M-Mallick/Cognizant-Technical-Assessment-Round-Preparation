@@ -1,3 +1,4 @@
+// Recursion is a technique where a method calls itself until a base condition is met.
 public class Main {
     public static int sum(int n) {   // Time Complexity → O(n) Space Complexity → O(n) (recursion stack)
         if(n == 0) return 0;
